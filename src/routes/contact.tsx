@@ -22,7 +22,7 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
 });
 
-const budgets = ["< $5k", "$5k – $15k", "$15k – $50k", "$50k+"];
+const budgets = ["< LKR 60,000", "LKR 60,000 – LKR 150,000", "LKR 150,000 – LKR 500,000", "LKR 500,000+"];
 
 function Contact() {
   const [service, setService] = useState("");
@@ -51,20 +51,21 @@ function Contact() {
         <ul className="mt-10 space-y-4">
           <li className="flex items-start gap-4 rounded-2xl border bg-card p-5">
             <Mail className="mt-0.5 size-5 text-primary" />
-            <div><p className="font-semibold">Email</p><a href="mailto:hello@optera.solutions" className="text-sm text-muted-foreground hover:text-foreground">hello@optera.solutions</a></div>
+            <div><p className="font-semibold">Email</p><a href="mailto:info@opterasolutions.com" className="text-sm text-muted-foreground hover:text-foreground">info@opterasolutions.com</a></div>
           </li>
           <li className="flex items-start gap-4 rounded-2xl border bg-card p-5">
             <MapPin className="mt-0.5 size-5 text-primary" />
-            <div><p className="font-semibold">Location</p><p className="text-sm text-muted-foreground">Colombo, Sri Lanka · Remote worldwide</p></div>
+            <div><p className="font-semibold">Location</p><p className="text-sm text-muted-foreground">23/1 Mawathagama, Kurunegala.</p></div>
           </li>
-          <li className="flex items-start gap-4 rounded-2xl border bg-brand-gradient p-5 text-primary-foreground">
+          <li className="flex items-start gap-4 rounded-2xl border bg-primary p-5 text-primary-foreground">
             <CalendarDays className="mt-0.5 size-5" />
             <div><p className="font-semibold">Prefer a call?</p><p className="text-sm opacity-90">Book a free 30-minute discovery meeting.</p></div>
           </li>
         </ul>
       </Reveal>
 
-      <Reveal delay={0.1} className="lg:col-span-3">
+      {/* Added mt-8 lg:mt-12 here to push the form down */}
+      <Reveal delay={0.1} className="mt-8 lg:mt-12 lg:col-span-3">
         <form onSubmit={onSubmit} className="grid gap-5 rounded-3xl border bg-card p-6 sm:grid-cols-2 md:p-10">
           <div className="space-y-2"><Label htmlFor="name">Name</Label><Input id="name" name="name" required maxLength={100} placeholder="Jane Doe" /></div>
           <div className="space-y-2"><Label htmlFor="email">Email</Label><Input id="email" name="email" type="email" required maxLength={255} placeholder="jane@company.com" /></div>

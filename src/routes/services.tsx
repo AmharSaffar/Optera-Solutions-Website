@@ -20,25 +20,35 @@ function Services() {
   return (
     <>
       <section className="mx-auto max-w-7xl px-5 pt-20">
-        <SectionHeading eyebrow="Services" title="Everything you need to ship and scale" subtitle="Pick one discipline or combine them — we plug in where you need us." />
+        <SectionHeading 
+          eyebrow="Services" 
+          title="Everything you need to ship and scale" 
+          subtitle="Pick one discipline or combine them — we plug in where you need us." 
+        />
       </section>
       <div className="mx-auto max-w-7xl space-y-6 px-5 pb-8">
         {services.map((s, i) => (
           <Reveal key={s.slug}>
             <section id={s.slug} className="scroll-mt-24 grid gap-8 rounded-3xl border bg-card p-8 md:grid-cols-2 md:p-12">
               <div>
-                <span className="text-sm font-semibold text-muted-foreground">0{i + 1}</span>
-                <div className="mt-4 inline-flex rounded-xl bg-accent p-3 text-accent-foreground">
-                  <s.icon className="size-7" strokeWidth={1.5} />
+                
+                {/* FIX: Wrapped the number and icon in a flex container for perfect side-by-side alignment */}
+                <div className="flex items-center gap-4">
+                  {/* <span className="text-sm font-semibold text-muted-foreground">0{i + 1}</span> */}
+                  <div className="inline-flex items-center justify-center rounded-xl bg-accent p-3 text-accent-foreground">
+                    <s.icon className="size-7" strokeWidth={1.5} />
+                  </div>
                 </div>
+
                 <h2 className="mt-5 text-2xl font-bold md:text-3xl">{s.title}</h2>
                 <p className="mt-1 font-medium text-primary">{s.tagline}</p>
                 <p className="mt-4 text-muted-foreground">{s.description}</p>
               </div>
               <ul className="grid content-center gap-3 sm:grid-cols-2">
                 {s.offerings.map((o) => (
-                  <li key={o} className="flex items-center gap-3 rounded-xl border bg-background p-4 text-sm font-medium">
-                    <Check className="size-4 shrink-0 text-primary" /> {o}
+                  <li key={o} className="flex items-start gap-3 rounded-xl border bg-background p-4 text-sm font-medium leading-tight">
+                    <Check className="mt-0.5 size-4 shrink-0 text-primary" /> 
+                    <span>{o}</span>
                   </li>
                 ))}
               </ul>

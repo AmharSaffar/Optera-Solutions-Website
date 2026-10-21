@@ -1,10 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Github, Linkedin, Facebook, Instagram } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Logo } from "./Logo";
 import { services } from "@/lib/site-data";
 
 export function Footer() {
@@ -19,11 +18,11 @@ export function Footer() {
             className="h-10 w-auto object-contain"
           />
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-            Software engineering studio building web, business and AI products for ambitious companies.
+            We design, build, and scale custom web applications, enterprise management systems and AI products for ambitious modern Businesses.
           </p>
           <div className="mt-5 flex gap-2">
-            {[Linkedin, Twitter, Github, Instagram].map((Icon, i) => (
-              <a key={i} href="#" aria-label="Social profile" className="rounded-lg border p-2 text-muted-foreground transition-colors hover:border-primary hover:text-primary">
+            {[Linkedin, Facebook, Github, Instagram].map((Icon, i) => (
+              <a key={i} href={`https://www.${["linkedin", "facebook", "github", "instagram"][i]}.com/optera.solutions`} aria-label="Social profile" className="rounded-lg border p-2 text-muted-foreground transition-colors hover:border-primary hover:text-primary">
                 <Icon className="size-4" />
               </a>
             ))}
@@ -63,7 +62,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t">
-        <p className="mx-auto max-w-7xl px-5 py-6 text-sm text-muted-foreground">
+        <p className="mx-auto max-w-7xl px-5 py-6 text-sm text-muted-foreground text-center">
           © {new Date().getFullYear()} Optera Solutions. All rights reserved.
         </p>
       </div>

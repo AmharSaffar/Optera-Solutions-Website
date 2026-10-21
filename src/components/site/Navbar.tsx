@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Logo } from "./Logo";
+
 
 const links = [
   { to: "/", label: "Home" },
@@ -40,7 +40,7 @@ export function Navbar() {
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5" aria-label="Main">
         <Link to="/" aria-label="Optera Solutions home" onClick={() => setOpen(false)}>
           <img
-            src="/src/assets/logo-transparent.png"
+            src="/logo-transparent.png"
             alt="Optera Solutions"
             className="h-10 w-auto object-contain"
           />

@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Compass, Eye, Gauge, Handshake, ShieldCheck, Users } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/Reveal";
 import { CtaBanner } from "@/components/site/CtaBanner";
-import team from "@/assets/team.jpg";
+import team from "@/assets/opterateam.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -41,7 +41,7 @@ function About() {
 
       <section className="mx-auto grid max-w-7xl gap-6 px-5 md:grid-cols-2">
         {[
-          { icon: Compass, title: "Our mission", text: "To give every ambitious business access to world-class engineering — fast, transparent and accountable." },
+          { icon: Compass, title: "Our mission", text: "To give every ambitious business access to world-class engineering fast, transparent and accountable." },
           { icon: Eye, title: "Our vision", text: "A future where software is a company's sharpest advantage, not its biggest bottleneck." },
         ].map((b, i) => (
           <Reveal key={b.title} delay={i * 0.08}>

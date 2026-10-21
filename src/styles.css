@@ -125,7 +125,7 @@
   }
 }
 
-/* @keyframes marquee {
+@keyframes marquee {
   0% {
     transform: translateX(0%);
   }
@@ -135,10 +135,5 @@
 }
 
 .animate-marquee {
-  animation: marquee 25s linear infinite;
+  animation: marquee 35s linear infinite;
 }
-
-/* Pause marquee on hover for better user experience */
-.animate-marquee:hover {
-  animation-play-state: paused;
-} */

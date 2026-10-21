@@ -2,7 +2,8 @@ import { Code2, Boxes, PenTool, BrainCircuit, TrendingUp, type LucideIcon } from
 import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
 import p3 from "@/assets/project-3.jpg";
-import team from "@/assets/team.jpg";
+import p4 from "@/assets/project-4.png";
+
 
 export type Service = {
   slug: string;
@@ -66,18 +67,33 @@ export type Project = { title: string; category: string; summary: string; image:
 export const projectCategories = ["All", "Web Apps", "AI Solutions", "E-commerce"] as const;
 
 export const projects: Project[] = [
-  { title: "Flowie Analytics", category: "Web Apps", summary: "Real-time revenue dashboard for a growing SaaS team.", image: p1 },
-  { title: "Nexora Store", category: "E-commerce", summary: "Mobile-first storefront with one-tap checkout.", image: p2 },
-  { title: "Brew POS", category: "Web Apps", summary: "Tablet point-of-sale for a multi-branch café chain.", image: p3 },
-  { title: "DocuMind", category: "AI Solutions", summary: "AI that reads and routes thousands of invoices a day.", image: team },
-  { title: "Atlas ERP", category: "Web Apps", summary: "Unified inventory, HR and finance for a manufacturer.", image: p1 },
-  { title: "Support Copilot", category: "AI Solutions", summary: "LLM assistant grounded in a 10k-article help center.", image: p3 },
+  { title: "99 Stores", category: "Digital Marketing", summary: "Scaling online revenue and foot-traffic with technical SEO and conversion-focused performance marketing.", image: p1 },
+  { title: "Mr Spice Export", category: "Website", summary: "A high-performance, international B2B export website built for global wholesale inquiries and catalog showcase.", image: p2 },
+  { title: "Apple Plaza", category: "Digital Marketing", summary: "Driving local foot traffic and digital inquiry funnels through technical local SEO and hyper-targeted lead generation.", image: p4 },
+  { title: "Royal Treats", category: "Branding", summary: "Designing a brand identity, visual style guide and cohesive packaging design system.", image: p3 },
 ];
 
-export const testimonials = [
-  { name: "Dilini Perera", role: "COO, Brewline Cafés", quote: "Our new POS cut checkout time in half. Optera understood our floor operations better than any vendor before.", rating: 5 },
-  { name: "Marcus Hale", role: "Founder, Nexora", quote: "They shipped our store in six weeks and conversions jumped 38% in the first month.", rating: 5 },
-  { name: "Aisha Rahman", role: "Head of Ops, Atlas Mfg.", quote: "The ERP replaced eleven spreadsheets. Clear communication from day one to launch.", rating: 5 },
-];
 
 export const clients = ["Brewline", "Nexora", "Atlas", "Lumen", "Vertex", "Kairo"];
+
+export const testimonials = [
+  
+  { 
+    name: "Muhammad Asif", 
+    role: "Founder, Tapito", 
+    quote: "Optera completely transformed our digital presence. The website is lightning-fast and gives us an immediate enterprise-level competitive edge.", 
+    rating: 5 
+  },
+  { 
+    name: "Danushka Perera", 
+    role: "Owner, IMobile", 
+    quote: "Our new POS cut checkout time in half. Optera understood our floor operations better than any vendor before.", 
+    rating: 4.5 
+  },
+  { 
+    name: "Balakrishnan Ramasamy", 
+    role: "Founder, Bala Traders", 
+    quote: "The ERP replaced eleven spreadsheets. Clear communication from day one to launch.", 
+    rating: 5 
+  },
+];
