@@ -2,12 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Compass, Eye, Gauge, Handshake, ShieldCheck, Users } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/Reveal";
 import { CtaBanner } from "@/components/site/CtaBanner";
-import team from "@/assets/opterateam.png";
+import team from "@/assets/opterateam.webp";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Optera Solutions" },
+      { title: "Optera Solutions | Software Development Company in Sri Lanka" },
       { name: "description", content: "Our mission, vision, engineering culture and values at Optera Solutions." },
       { property: "og:title", content: "About — Optera Solutions" },
       { property: "og:description", content: "Why Optera Solutions stands out in software development." },

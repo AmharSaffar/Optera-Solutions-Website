@@ -6,18 +6,18 @@ import { Reveal, SectionHeading } from "@/components/site/Reveal";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { ProjectCard } from "@/components/site/ProjectCard";
 import { clients, projects, services, testimonials } from "@/lib/site-data";
-import store99Logo from "@/assets/project-1.jpg";
-import royalTreatsLogo from "@/assets/project-1.jpg";
-import applePlazaLogo from "@/assets/project-1.jpg";
+import store99Logo from "@/assets/project-1.webp";
+import royalTreatsLogo from "@/assets/project-1.webp";
+import applePlazaLogo from "@/assets/project-1.webp";
 
 
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Optera Solutions — Engineering digital excellence" },
+      { title: "Optera Solutions | Software Development Company in Sri Lanka" },
       { name: "description", content: "Web development, business systems, UI/UX, AI solutions and digital marketing for modern enterprises." },
-      { property: "og:title", content: "Optera Solutions — Engineering digital excellence" },
+      { property: "og:title", content: "Optera Solutions | Software Development Company in Sri Lanka" },
       { property: "og:description", content: "Web, business systems, design, AI and marketing — engineered by Optera Solutions." },
     ],
   }),

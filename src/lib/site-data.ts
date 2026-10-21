@@ -1,8 +1,8 @@
 import { Code2, Boxes, PenTool, BrainCircuit, TrendingUp, type LucideIcon } from "lucide-react";
-import p1 from "@/assets/project-1.jpg";
-import p2 from "@/assets/project-2.jpg";
-import p3 from "@/assets/project-3.jpg";
-import p4 from "@/assets/project-4.png";
+import p1 from "@/assets/project-1.webp";
+import p2 from "@/assets/project-2.webp";
+import p3 from "@/assets/project-3.webp";
+import p4 from "@/assets/project-4.webp";
 
 
 export type Service = {
@@ -22,7 +22,7 @@ export const services: Service[] = [
     tagline: "High-performance Web Applications, E-commerce and Cloud POS platforms",
     description:
       "We design and engineer fast, resilient web applications and portals tailored to convert visitors into recurring customers.",
-    offerings: ["Corporate websites", "E-commerce websites", "Web applications", "POS systems"],
+    offerings: ["Landing Page Websites","Corporate Websites", "E-commerce Websites", "Custom Web Applications", "POS Systems", "Website Maintenance"],
   },
   {
     slug: "business-systems",
@@ -31,16 +31,16 @@ export const services: Service[] = [
     tagline: "Tailored ERPs, Custom CRMs and Internal workflow automation",
     description:
       "Streamline operations and modernize internal workflows with scalable enterprise software built specifically for your business processes.",
-    offerings: ["ERP platforms", "Inventory & Procurement", "HR &  Payroll tools", "Workflow automation"],
+    offerings: ["ERP Systems", "CRM Systems", "HR &  Payroll Systems", "Workflow Automations",],
   },
   {
     slug: "design",
     icon: PenTool,
-    title: "Design & Brand Experience",
+    title: "Branding & Creative Solutions",
     tagline: "User-centric UI/UX interface design, Design systems and Digital branding",
     description:
       "Research-led product design and component systems that keep your brand consistent across every screen.",
-    offerings: ["UX research", "UI design", "Design systems", "Brand identity"],
+    offerings: ["Logo & Brand Identity Design", "Brand Strategy & Guidelines", "Graphic Design", "Social Media Creatives", "Packaging Design", "Marketing Materials"],
   },
   {
     slug: "ai-solutions",
@@ -49,7 +49,7 @@ export const services: Service[] = [
     tagline: "Custom LLMs, Intelligent workflow automation and Predictive analytics",
     description:
       "Integrate artificial intelligence models directly into your core business operations to drive speed and automation.",
-    offerings: ["LLM integrations", "AI chat assistants", "Document automation", "Predictive analytics"],
+    offerings: ["AI-Powered Customer Support", "AI chat assistants", "AI-Powered Business Tools", "AI Workflow Integration"],
   },
   {
     slug: "digital-marketing",
@@ -58,7 +58,7 @@ export const services: Service[] = [
     tagline: "Data-driven growth campaigns, technical SEO and conversion funnels",
     description:
       "Scale your digital footprint and generate qualified leads through technical search optimization and high-converting funnel strategies.",
-    offerings: ["Technical SEO Optimization", "Content strategy", "Paid campaigns", "Analytics & Reporting"],
+    offerings: ["Social Media Management", "Search Engine Optimization", "Google Ads & Meta Ads", "Digital Marketing Strategy", "Content Marketing", "Performance Reporting"],
   },
 ];
 

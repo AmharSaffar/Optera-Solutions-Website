@@ -34,8 +34,8 @@ export function Navbar() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || open
-        ? "glass border-b border-border text-foreground"
-        : "bg-transparent border-b border-transparent text-white"
+      ? "glass border-b border-border text-foreground"
+      : "bg-transparent border-b border-transparent text-white"
       }`}>
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5" aria-label="Main">
         <Link to="/" aria-label="Optera Solutions home" onClick={() => setOpen(false)}>
@@ -59,14 +59,35 @@ export function Navbar() {
           ))}
         </ul>
         <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" onClick={toggle} aria-label="Toggle dark mode">
-            {dark ? <Sun className="size-5" /> : <Moon className="size-5" />}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggle}
+            aria-label="Toggle dark mode"
+            className="text-foreground hover:bg-accent hover:text-accent-foreground"
+          >
+            {dark ? (
+              <Sun className="size-5 text-foreground" />
+            ) : (
+              <Moon className="size-5 text-foreground" />
+            )}
           </Button>
           <Button asChild className="hidden sm:inline-flex">
             <Link to="/contact">Get a Consultation</Link>
           </Button>
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}>
-            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setOpen(!open)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            className="md:hidden text-foreground hover:bg-accent hover:text-accent-foreground"
+          >
+            {open ? (
+              <X className="size-5 text-foreground" />
+            ) : (
+              <Menu className="size-5 text-foreground" />
+            )}
           </Button>
         </div>
       </nav>

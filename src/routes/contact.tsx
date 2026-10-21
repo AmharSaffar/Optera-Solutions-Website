@@ -13,9 +13,9 @@ import { services } from "@/lib/site-data";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Optera Solutions" },
+      { title: "Optera Solutions | Software Development Company in Sri Lanka" },
       { name: "description", content: "Tell us about your project and get a plan, timeline and estimate from Optera Solutions." },
-      { property: "og:title", content: "Contact — Optera Solutions" },
+      { property: "og:title", content: "Optera Solutions | Software Development Company in Sri Lanka" },
       { property: "og:description", content: "Start your project with Optera Solutions." },
     ],
   }),
