@@ -9,7 +9,7 @@ export const Route = createFileRoute("/about")({
     meta: [
       { title: "Optera Solutions | Software Development Company in Sri Lanka" },
       { name: "description", content: "Our mission, vision, engineering culture and values at Optera Solutions." },
-      { property: "og:title", content: "About — Optera Solutions" },
+      { property: "og:title", content: "About Optera Solutions - Software Company in Sri Lanka." },
       { property: "og:description", content: "Why Optera Solutions stands out in software development." },
     ],
   }),
@@ -29,9 +29,9 @@ function About() {
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 md:grid-cols-2">
         <Reveal>
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">About us</p>
-          <h1 className="mt-3 text-4xl font-extrabold md:text-5xl">A studio of engineers who care about outcomes</h1>
+          <h1 className="mt-3 text-4xl font-extrabold md:text-5xl">A Sri Lankan Software Company Focused on Your Business Results</h1>
           <p className="mt-5 text-lg text-muted-foreground">
-            Optera Solutions is a young software company helping startups and enterprises turn ideas into reliable, revenue-driving products.
+            Optera Solutions is a software and digital solutions company helping startups, small businesses and enterprises in Sri Lanka & worldwide. We build custom websites, web applications, POS systems, ERP softwares, AI solutions and digital marketing campaigns that turn ideas into reliable revenue-driving products.
           </p>
         </Reveal>
         <Reveal delay={0.1}>
@@ -41,7 +41,7 @@ function About() {
 
       <section className="mx-auto grid max-w-7xl gap-6 px-5 md:grid-cols-2">
         {[
-          { icon: Compass, title: "Our mission", text: "To give every ambitious business access to world-class engineering fast, transparent and accountable." },
+          { icon: Compass, title: "Our mission", text: "To give every ambitious business access to world-class software engineering that is fast, transparent and accountable." },
           { icon: Eye, title: "Our vision", text: "A future where software is a company's sharpest advantage, not its biggest bottleneck." },
         ].map((b, i) => (
           <Reveal key={b.title} delay={i * 0.08}>

@@ -67,8 +67,8 @@ function Contact() {
       {/* Added mt-8 lg:mt-12 here to push the form down */}
       <Reveal delay={0.1} className="mt-8 lg:mt-12 lg:col-span-3">
         <form onSubmit={onSubmit} className="grid gap-5 rounded-3xl border bg-card p-6 sm:grid-cols-2 md:p-10">
-          <div className="space-y-2"><Label htmlFor="name">Name</Label><Input id="name" name="name" required maxLength={100} placeholder="Jane Doe" /></div>
-          <div className="space-y-2"><Label htmlFor="email">Email</Label><Input id="email" name="email" type="email" required maxLength={255} placeholder="jane@company.com" /></div>
+          <div className="space-y-2"><Label htmlFor="name">Name</Label><Input id="name" name="name" required maxLength={100} placeholder="Kamal Dev" /></div>
+          <div className="space-y-2"><Label htmlFor="email">Email</Label><Input id="email" name="email" type="email" required maxLength={255} placeholder="kamal@gmail.com" /></div>
           <div className="space-y-2">
             <Label>Service</Label>
             <Select value={service} onValueChange={setService}>
@@ -84,7 +84,7 @@ function Contact() {
             </Select>
           </div>
           <div className="space-y-2 sm:col-span-2"><Label htmlFor="message">Message</Label><Textarea id="message" name="message" required maxLength={2000} rows={6} placeholder="Tell us about your goals, timeline and anything else." /></div>
-          <Button type="submit" size="lg" disabled={sending} className="sm:col-span-2">{sending ? "Sending…" : "Send inquiry"}</Button>
+          <Button type="submit" size="lg" disabled={sending} className="sm:col-span-2">{sending ? "Sending…" : "Send Inquiry"}</Button>
         </form>
       </Reveal>
     </section>
