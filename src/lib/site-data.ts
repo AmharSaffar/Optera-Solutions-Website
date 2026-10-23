@@ -3,6 +3,7 @@ import p1 from "@/assets/project-1.webp";
 import p2 from "@/assets/project-2.webp";
 import p3 from "@/assets/project-3.webp";
 import p4 from "@/assets/project-4.webp";
+import p5 from "@/assets/project-5.webp";
 
 
 export type Service = {
@@ -60,6 +61,7 @@ export const services: Service[] = [
       "Scale your digital footprint and generate qualified leads through technical search optimization and high-converting funnel strategies.",
     offerings: ["Social Media Management", "Search Engine Optimization", "Google Ads & Meta Ads", "Digital Marketing Strategy", "Content Marketing", "Performance Reporting"],
   },
+  
 ];
 
 export type Project = { title: string; category: string; summary: string; image: string };
@@ -71,6 +73,7 @@ export const projects: Project[] = [
   { title: "Mr Spice Export", category: "Website", summary: "A high-performance, international B2B export website built for global wholesale inquiries and catalog showcase.", image: p2 },
   { title: "Apple Plaza", category: "Digital Marketing", summary: "Driving local foot traffic and digital inquiry funnels through technical local SEO and hyper-targeted lead generation.", image: p4 },
   { title: "Royal Treats", category: "Branding", summary: "Designing a brand identity, visual style guide and cohesive packaging design system.", image: p3 },
+  { title: "Zero Kids", category: "Digital Marketing", summary: "A comprehensive digital marketing strategy to engage and convert young audiences.", image: p5 },
 ];
 
 

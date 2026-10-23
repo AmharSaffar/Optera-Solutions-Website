@@ -3,7 +3,6 @@ import { Menu, Moon, Sun, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
-
 const links = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
@@ -58,41 +57,46 @@ export function Navbar() {
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          {/* Moon / Theme Toggle Button Updated */}
           <Button
             variant="ghost"
             size="icon"
             onClick={toggle}
             aria-label="Toggle dark mode"
-            className="text-foreground hover:bg-accent hover:text-accent-foreground"
+            className="rounded-full bg-blue-50 hover:bg-blue-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700 transition-colors"
           >
             {dark ? (
-              <Sun className="size-5 text-foreground" />
+              <Sun className="size-5" />
             ) : (
-              <Moon className="size-5 text-foreground" />
+              <Moon className="size-5" />
             )}
           </Button>
-          <Button asChild className="hidden sm:inline-flex">
+          
+          <Button asChild className="hidden sm:inline-flex rounded-full">
             <Link to="/contact">Get a Consultation</Link>
           </Button>
+          
+          {/*  Hamburger Menu Button Updated */}
           <Button
             variant="ghost"
             size="icon"
             onClick={() => setOpen(!open)}
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
-            className="md:hidden text-foreground hover:bg-accent hover:text-accent-foreground"
+            className="md:hidden rounded-full bg-blue-50 hover:bg-blue-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700 transition-colors"
           >
             {open ? (
-              <X className="size-5 text-foreground" />
+              <X className="size-5" />
             ) : (
-              <Menu className="size-5 text-foreground" />
+              <Menu className="size-5" />
             )}
           </Button>
         </div>
       </nav>
+      
       {open && (
-        <ul className="space-y-1 px-5 pb-5 md:hidden">
+        <ul className="space-y-1 px-5 pb-5 md:hidden glass">
           {links.map((l) => (
             <li key={l.to}>
               <Link
@@ -106,7 +110,7 @@ export function Navbar() {
             </li>
           ))}
           <li className="pt-2">
-            <Button asChild className="w-full">
+            <Button asChild className="w-full rounded-full">
               <Link to="/contact" onClick={() => setOpen(false)}>Get a Consultation</Link>
             </Button>
           </li>

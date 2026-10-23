@@ -47,11 +47,11 @@ function Home() {
           preload="metadata"
           aria-hidden="true"
         >
-          <source src="/bgvideo.mp4" type="video/mp4" />
+          <source src="/bgvideo.webm" type="video/webm" />
         </video>
 
         {/* Black overlay to keep text readable */}
-        <div className="absolute inset-0 -z-10 bg-black/55" />
+        <div className="absolute inset-0 -z-10 bg-black/70" />
 
         {/* Hero content */}
         <div className="relative mx-auto max-w-5xl px-5 pb-20 pt-20 text-center md:pb-28 md:pt-28">
